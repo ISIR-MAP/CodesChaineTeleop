@@ -10,6 +10,7 @@ bool debug;
 int x;
 int pwmmax;
 int ref;
+int tempsech;
 void setup() {
   
   //pinMode(pSENSOR, INPUT);
@@ -22,7 +23,15 @@ void setup() {
     ref = pow(2,readresolution-1);
      lasttime = micros();
       Serial.begin(9600);
-      debug = 1;
+      debug = 0;
+      if(debug)
+      {
+        tempsech = 150;
+      }
+      else
+      {
+        tempsech = 100;
+      }
       message="";
 }
 
@@ -51,7 +60,8 @@ kD = 0.001;
   x = analogRead(0); //ADC->ADC_CDR[7]; //READ VALUE A0 //read position between 0-4096
   if(debug)
   {
-    message=""+x;  
+    Serial.print("Pos:");
+    Serial.print(x);  
   }
   //double pos = map(x, 0, 1024, 0, 255);
 
@@ -68,7 +78,8 @@ kD = 0.001;
    P = errorpn * kP;
    if(debug)
   {
-    message=message+"P: "+ P;  
+    Serial.print(" P: ");
+    Serial.print(P);  
   }
     
    //I
@@ -76,7 +87,8 @@ kD = 0.001;
    I = constrain(I, -2048, 2048); // saturation de l'integrateur
     if(debug)
   {
-    message=message+"I: "+ I;  
+    Serial.print("I: ");
+    Serial.print(I);  
   }
   
     //D
@@ -84,7 +96,8 @@ kD = 0.001;
     lastSample = x;
      if(debug)
   {
-    message=message+"D: "+ D;  
+    Serial.print("D: ");
+    Serial.print(D);  
   }
     
     pid = -(P+I+D);
@@ -98,10 +111,12 @@ controlePwm = constrain(controlePwm, 10.0/100.0*pwmmax, 90.0/100.0* pwmmax);
   analogWrite(pCONTROLE, controlePwm);
    if(debug)
   {
-    message = message + " pwm: "+ controlePwm;
-    Serial.println(message);
+    //message = message + " pwm: "+ controlePwm;
+    Serial.print(" pwm:");
+    Serial.println(controlePwm);
   }
-   while ((micros()-lasttime) <= 250) {
+  Serial.println(pid);
+   while ((micros()-lasttime) <= tempsech) {
       digitalWrite(ledpin, 0);
       }
 lasttime = micros();
