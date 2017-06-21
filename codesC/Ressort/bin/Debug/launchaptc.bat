@@ -1,0 +1,1 @@
+haptic -i 1

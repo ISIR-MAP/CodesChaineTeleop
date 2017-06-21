@@ -1,0 +1,95 @@
+# depslib dependency file v1.0
+1437728013 source:c:\users\antoine\documents\programmestimon1x\ressort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<getopt.h>
+	<string.h>
+	<signal.h>
+	<math.h>
+	<ftdi.h>
+	<libusb.h>
+	<sys\timeb.h>
+
+1416997097 c:\users\antoine\documents\programmestimon1x\ressort\include\libftdi1\ftdi.h
+	<stdint.h>
+	<sys/time.h>
+
+1416997097 c:\users\antoine\documents\programmestimon1x\ressort\include\confuse.h
+	<stdio.h>
+	<stdarg.h>
+	<io.h>
+
+1416997097 c:\users\antoine\documents\programmestimon1x\ressort\include\libusbx-1.0\libusb.h
+	<stdint.h>
+	<sys/types.h>
+	<time.h>
+	<limits.h>
+	<sys/time.h>
+	<windows.h>
+
+1416997097 c:\users\antoine\documents\programmestimon1x\ressort\include\ftdi.h
+	<stdint.h>
+	<sys/time.h>
+
+1416997097 c:\users\antoine\documents\programmestimon1x\ressort\include\libusb.h
+	<stdint.h>
+	<sys/types.h>
+	<time.h>
+	<limits.h>
+	<sys/time.h>
+	<windows.h>
+
+1452873988 source:d:\users\antoine\documents\programmestimon1x\ressort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<getopt.h>
+	<string.h>
+	<signal.h>
+	<math.h>
+	<ftdi.h>
+	<libusb.h>
+	<sys\timeb.h>
+	<sys\stat.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<winsock2.h>
+
+1416997097 d:\users\antoine\documents\programmestimon1x\ressort\include\ftdi.h
+	<stdint.h>
+	<sys/time.h>
+
+1416997097 d:\users\antoine\documents\programmestimon1x\ressort\include\libusb.h
+	<stdint.h>
+	<sys/types.h>
+	<time.h>
+	<limits.h>
+	<sys/time.h>
+	<windows.h>
+
+1465405382 source:c:\users\map\documents\codes\ressort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<getopt.h>
+	<string.h>
+	<signal.h>
+	<math.h>
+	<ftdi.h>
+	<libusb.h>
+	<sys\timeb.h>
+	<sys\stat.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<winsock2.h>
+
+1417000697 c:\users\map\documents\codes\ressort\include\ftdi.h
+	<stdint.h>
+	<sys/time.h>
+
+1417000697 c:\users\map\documents\codes\ressort\include\libusb.h
+	<stdint.h>
+	<sys/types.h>
+	<time.h>
+	<limits.h>
+	<sys/time.h>
+	<windows.h>
+
