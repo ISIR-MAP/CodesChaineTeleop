@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1498497243 source:c:\users\map\desktop\interfacefinale\main.c
+	<stdio.h>
+	<stdlib.h>
+	<getopt.h>
+	<string.h>
+	<signal.h>
+	<math.h>
+	<ftdi.h>
+	<libusb.h>
+	<sys\timeb.h>
+	<sys\stat.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<winsock2.h>
+	<windows.h>
+
+1417000697 c:\users\map\desktop\interfacefinale\include\ftdi.h
+	<stdint.h>
+	<sys/time.h>
+
+1417000697 c:\users\map\desktop\interfacefinale\include\libusb.h
+	<stdint.h>
+	<sys/types.h>
+	<time.h>
+	<limits.h>
+	<sys/time.h>
+	<windows.h>
+

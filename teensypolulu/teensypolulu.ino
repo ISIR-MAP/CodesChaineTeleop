@@ -28,9 +28,10 @@ void setup()   {
 void loop()                     
 {
   
-  digitalWrite(ledpin, 1);
+ 
   if(Serial.available() > 0)
   {
+     digitalWrite(ledpin, 1);
     char BUFFER[Serial.available()];
     int index = 0;
     //Serial.println(Serial.available());
@@ -43,9 +44,9 @@ void loop()
     sscanf(BUFFER,"%f",&force);
     //Serial.println(force);
     incomming =(int)( (force-2048)/2048*(float)pwmmax);
-    
+    Serial.println(incomming);
   }
-  Serial.println(incomming);
+  //
   if (incomming <0)
   {
   analogWrite(motorpin, (int)-incomming);
